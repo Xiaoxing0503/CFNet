@@ -1,1 +1,1 @@
-# CompFusion
+# CFNet
