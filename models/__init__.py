@@ -1,1 +1,1 @@
-from .model import CFNet
+from .model import TCM
