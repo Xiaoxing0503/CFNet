@@ -16,7 +16,7 @@ from compressai.zoo import models
 from pytorch_msssim import ms_ssim
 import RGB_YCrCb
 
-from models import CFNet
+from models import TCM
 # from torch.utils.tensorboard import SummaryWriter
 import os
 # from data.dataloder import Dataset as D
@@ -312,7 +312,7 @@ def main(argv):
         pin_memory=(device == "cuda"),
     )
 
-    net = CFNet(config=[2,2,2,2,2,2], head_dim=[8, 16, 32, 32, 16, 8], drop_path_rate=0.0, N=args.N, M=320, isRGB=True)
+    net = TCM(config=[2,2,2,2,2,2], head_dim=[8, 16, 32, 32, 16, 8], drop_path_rate=0.0, N=args.N, M=320, isRGB=True)
     net = net.to(device)
 
     # if args.cuda and torch.cuda.device_count() > 1:
