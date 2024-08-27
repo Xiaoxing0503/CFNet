@@ -9,8 +9,8 @@ from compressai.layers import (
     conv3x3,
     subpel_conv3x3,
 )
-from layers import CheckerboardMaskedConv2d
-from models import *
+# from layers import CheckerboardMaskedConv2d
+# from models import *
 import torch.nn as nn
 import torch.nn.functional as F
 from torch import Tensor
