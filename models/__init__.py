@@ -1,1 +1,1 @@
-from .model import TCM
+from .tcm import TCM
